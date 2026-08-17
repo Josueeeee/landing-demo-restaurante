@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
-import FirePlate from "./FirePlate";
 
 const menu = {
   Fuego: [
@@ -32,7 +31,7 @@ export default function Home(){
   return <main>
     <nav className="nav"><div className="scroll-progress" style={{width:`${progress}%`}}/><a className="logo" href="#inicio">BRASA<span>NÓMADA</span></a><div><a href="#menu">MENÚ</a><a href="#historia">HISTORIA</a><a href="#ubicacion">UBICACIÓN</a></div><a className="reserve" href="#contacto">RESERVAR MESA ↗</a></nav>
     <a className="floating-reserve" href="#contacto"><span>HOY</span> HAY MESA <b>↗</b></a>
-    <section className="hero" id="inicio"><div className="hero-image"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=88" alt="Mesa de cocina latinoamericana servida al centro"/><FirePlate/><div className="flame-badge">MUEVE<br/>EL PLATO<br/><span>●</span></div></div><div className="hero-type"><p>COCINA LATINA / TEGUCIGALPA</p><h1>COMER<br/><i>JUNTOS</i><br/>SABE MEJOR.</h1><div className="hero-foot"><p>Producto local, fuego encendido y platos hechos para pasar de mano en mano.</p><span>MAR—DOM<br/>12:00—23:00</span><a href="#menu">VER MENÚ ↓</a></div></div></section>
+    <section className="hero" id="inicio"><div className="hero-image"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=88" alt="Mesa de cocina latinoamericana servida al centro"/><div className="flame-badge">FUEGO<br/>VIVO<br/><span>●</span></div></div><div className="hero-type"><p>COCINA LATINA / TEGUCIGALPA</p><h1>COMER<br/><i>JUNTOS</i><br/>SABE MEJOR.</h1><div className="hero-foot"><p>Producto local, fuego encendido y platos hechos para pasar de mano en mano.</p><span>MAR—DOM<br/>12:00—23:00</span><a href="#menu">VER MENÚ ↓</a></div></div></section>
     <div className="ticker"><span>BRASA · HUMO · MAÍZ · TEMPORADA · </span><span>BRASA · HUMO · MAÍZ · TEMPORADA · </span></div>
 
     <section className="story" id="historia"><div className="story-head"><span>01 / SOBRE LA MESA</span><h2>NO COCINAMOS<br/>PARA LA FOTO.<br/><i>COCINAMOS PARA VOLVER.</i></h2></div><div className="story-grid"><div className="story-copy"><p>Brasa Nómada recorre América Latina a través de sus fuegos: leña, rescoldo, comal y memoria. El menú cambia con lo que llega del campo y con lo que nos provoca compartir.</p><div><strong>80%</strong><span>producto hondureño</span></div><div><strong>0</strong><span>atajos en cocina</span></div><a className="story-cta" href="#contacto">VEN A PROBARLO <b>↗</b></a></div><figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=88" alt="Plato de cocina de temporada servido en Brasa Nómada"/><figcaption>COCINA ABIERTA · SERVICIO 2026</figcaption></figure></div></section>
